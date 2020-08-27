@@ -14,19 +14,30 @@ node index.js
 1. 在flutter项目里面新建文件 Iconfont.dart，然后将生成的内容拷贝进去
 2. 在需要使用的文件中引入在个类
 3. 使用方式和flutter中原生基本一样
-具体使用：
+4. 将下载下来的阿里图标中文件 iconfont.ttf 拷贝到flutter项目的assets文件夹下
+5. 然后在flutter项目的pubspec.yaml配置，如下：
 
+```bash
+  fonts:
+    - family: Iconfont
+      fonts:
+        - asset: assets/iconfont.ttf
 ```
-// 和其他组件中使用
+
+### 具体使用：
+
+1. 和其他组件中使用
 Container(
     alignment: Alignment.center,
     width: 80,
     height: 80,
-    child: Icon(Iconfont.mianxingdafeng)
+    child: Icon(Iconfont.test, color: Colors.white)
 ),
-// 图标单独使用
+2. 图标单独使用
+
 Icon(Iconfont.mianxingdafeng)
-// flutter原生使用
+
+3. flutter原生使用
+
 Icon(Icons.home)
 
-```
