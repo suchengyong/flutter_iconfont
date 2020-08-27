@@ -27,17 +27,19 @@ node index.js
 ### 具体使用：
 
 1. 和其他组件中使用
+```bash
 Container(
-    alignment: Alignment.center,
-    width: 80,
-    height: 80,
-    child: Icon(Iconfont.test, color: Colors.white)
+  alignment: Alignment.center,
+  width: 80,
+  height: 80,
+  child: Icon(Iconfont.test, color: Colors.white)
 ),
+```
 2. 图标单独使用
-
+```bash
 Icon(Iconfont.mianxingdafeng)
-
+```
 3. flutter原生使用
-
+```bash
 Icon(Icons.home)
-
+```
